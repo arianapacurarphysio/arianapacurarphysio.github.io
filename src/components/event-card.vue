@@ -1,3 +1,41 @@
+<template>
+  <div class="event-card-event-card">
+    <img :alt="image_alt" :src="image_src" class="event-card-image" />
+    <div class="event-card-vertical-line"></div>
+    <div class="event-card-container">
+      <span class="event-card-title">{{ new_prop }}</span>
+      <span class="event-card-text">{{ text }}</span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'EventCard',
+  props: {
+    new_prop: {
+      type: String,
+      default: 'Inbound Marketing Secrets',
+    },
+    image_alt: {
+      type: String,
+      default: 'image',
+    },
+    text: {
+      type: String,
+      default:
+        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    },
+    image_src: {
+      type: String,
+      default:
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&ixlib=rb-1.2.1&w=200',
+    },
+  },
+}
+</script>
+
+<style scoped>
 .event-card-event-card {
   width: 100%;
   display: flex;
@@ -67,3 +105,4 @@
     text-align: center;
   }
 }
+</style>

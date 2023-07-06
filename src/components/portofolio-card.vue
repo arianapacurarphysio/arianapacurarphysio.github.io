@@ -1,3 +1,40 @@
+<template>
+  <div class="portofolio-card-speaker-card" v-bind:class="rootClassName">
+    <div class="portofolio-card-image-container">
+      <img :alt="image_alt" :src="image_src" class="portofolio-card-image" />
+      <div class="portofolio-card-see-project-container">
+        <button class="button-secondary-white button button-md">
+          See project
+        </button>
+      </div>
+    </div>
+    <span class="portofolio-card-first-name">{{ project_title }}</span>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'PortofolioCard',
+  props: {
+    rootClassName: String,
+    project_title: {
+      type: String,
+      default: 'Office Life Campaign - Boost your creativity',
+    },
+    image_alt: {
+      type: String,
+      default: 'image',
+    },
+    image_src: {
+      type: String,
+      default:
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&ixlib=rb-1.2.1&w=300',
+    },
+  },
+}
+</script>
+
+<style scoped>
 .portofolio-card-speaker-card {
   display: flex;
   position: relative;
@@ -55,3 +92,4 @@
 
 
 
+</style>

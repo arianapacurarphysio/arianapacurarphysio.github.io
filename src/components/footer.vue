@@ -1,6 +1,5 @@
-<div>
-  <link href="./footer.css" rel="stylesheet" />
-  <footer class="footer-footer section-container">
+<template>
+  <footer class="footer-footer section-container" v-bind:class="rootClassName">
     <div class="footer-max-width max-content-container">
       <div class="footer-bottom-container">
         <div class="footer-left-side">
@@ -10,9 +9,9 @@
             class="footer-image"
           />
           <span class="footer-text">
-            Register for the most insightful marketing conference of Europe.
-            Over 30 speakers, 2 days full of digital marketing and social media
-            news, best practices and insights from all over the world.
+            Register for the most insightful marketing conference of Europe. Over
+            30 speakers, 2 days full of digital marketing and social media news,
+            best practices and insights from all over the world.
           </span>
           <div class="footer-social-media">
             <span class="footer-text01">Follow market1</span>
@@ -74,8 +73,11 @@
       <div class="footer-copyright">
         <span class="footer-text17">
           <span>
-            <span>© All rights reserved</span>
-            <span></span>
+            <span>
+              © All rights reserved
+              <span v-html="rawvhjm"></span>
+            </span>
+            <span><span v-html="raw03ft"></span></span>
           </span>
           <a
             href="https://www.teleporthq.io"
@@ -85,8 +87,11 @@
             <span class="footer-text21">@TeleportHQ.</span>
           </a>
           <span>
-            <span>Powered by</span>
-            <span></span>
+            <span>
+              Powered by
+              <span v-html="raw1xz7"></span>
+            </span>
+            <span><span v-html="rawjvev"></span></span>
           </span>
           <a
             href="https://www.vercel.com"
@@ -96,8 +101,11 @@
             <span class="footer-text25">Vercel</span>
           </a>
           <span>
-            <span>. Image source:</span>
-            <span></span>
+            <span>
+              . Image source:
+              <span v-html="raw8qhj"></span>
+            </span>
+            <span><span v-html="raw1mgv"></span></span>
           </span>
           <a
             href="https://www.unsplash.com"
@@ -111,4 +119,217 @@
       </div>
     </div>
   </footer>
-</div>
+</template>
+
+<script>
+export default {
+  name: 'Footer',
+  props: {
+    rootClassName: String,
+    rootClassName1: String,
+  },
+  data() {
+    return {
+      rawvhjm: ' ',
+      raw03ft: ' ',
+      raw1xz7: ' ',
+      rawjvev: ' ',
+      raw8qhj: ' ',
+      raw1mgv: ' ',
+    }
+  },
+}
+</script>
+
+<style scoped>
+.footer-footer {
+  background-color: var(--dl-color-scheme-black);
+}
+.footer-max-width {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-bottom-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: var(--dl-space-space-sixunits);
+  justify-content: space-between;
+}
+.footer-left-side {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-image {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.footer-text {
+  color: var(--dl-color-scheme-white);
+  max-width: 350px;
+  margin-bottom: 60px;
+  text-transform: none;
+}
+.footer-social-media {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-text01 {
+  color: var(--dl-color-scheme-white);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.footer-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer-icon {
+  fill: var(--dl-color-scheme-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-right: var(--dl-space-space-twounits);
+}
+.footer-icon:hover {
+  fill: var(--dl-color-scheme-brown);
+  cursor: pointer;
+}
+.footer-icon04 {
+  fill: var(--dl-color-scheme-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-right: var(--dl-space-space-twounits);
+}
+.footer-icon04:hover {
+  fill: var(--dl-color-scheme-brown);
+  cursor: pointer;
+}
+.footer-icon08 {
+  fill: var(--dl-color-scheme-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-right: var(--dl-space-space-twounits);
+}
+.footer-icon08:hover {
+  fill: var(--dl-color-scheme-brown);
+  cursor: pointer;
+}
+.footer-icon10 {
+  fill: var(--dl-color-scheme-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+}
+.footer-icon10:hover {
+  fill: var(--dl-color-scheme-brown);
+  cursor: pointer;
+}
+.footer-links {
+  flex: 0 0 auto;
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer-container1 {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-text02 {
+  color: var(--dl-color-scheme-white);
+  cursor: default;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.footer-text08 {
+  margin-bottom: 0px;
+}
+.footer-container2 {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-text09 {
+  color: var(--dl-color-scheme-white);
+  cursor: default;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.footer-text16 {
+  margin-bottom: 0px;
+}
+.footer-copyright {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+}
+.footer-text17 {
+  color: var(--dl-color-scheme-white80);
+  font-size: 14px;
+  text-transform: none;
+}
+.footer-text21 {
+  text-decoration: underline;
+}
+.footer-text25 {
+  text-decoration: underline;
+}
+.footer-text29 {
+  text-decoration: underline;
+}
+@media(max-width: 991px) {
+  .footer-bottom-container {
+    flex-direction: column-reverse;
+  }
+  .footer-left-side {
+    width: 100%;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+}
+@media(max-width: 479px) {
+  .footer-links {
+    flex-wrap: wrap;
+  }
+  .footer-container1 {
+    width: 100%;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .footer-text02 {
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .footer-container2 {
+    width: 100%;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .footer-text09 {
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+}
+</style>
