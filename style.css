@@ -1,6 +1,6 @@
 :root {
   --dl-color-blue-500: #17c1e8ff;
-  --dl-color-gray-500: #595959;
+  --dl-color-gray-500: #a8d1e7;
   --dl-color-gray-700: #999999;
   --dl-color-gray-800: #D9D9D9;
   --dl-color-gray-900: #f8f9faff;
@@ -11,7 +11,7 @@
   --dl-color-pink-700: #cb0c9fff;
   --dl-size-size-unit: 1rem;
   --dl-color-gray-black: #000000;
-  --dl-color-gray-white: #FFFFFF;
+  --dl-color-gray-white: #dce7f6;
   --dl-space-space-unit: 1rem;
   --dl-color-primary-100: #c172d5ff;
   --dl-color-primary-500: #ac43c7ff;
@@ -23,7 +23,7 @@
   --dl-color-secondary-400: #67748eff;
   --dl-color-secondary-500: #344767ff;
   --dl-color-secondary-600: #252f40ff;
-  --dl-color-secondary-700: #20273fff;
+  --dl-color-secondary-700: #f8f9fa;
   --dl-radius-radius-round: 50%;
   --dl-size-size-doubleunit: 2rem;
   --dl-size-size-tripleunit: 3rem;
