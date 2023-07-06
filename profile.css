@@ -29,6 +29,7 @@
   padding-left: var(--dl-space-space-unitandahalfunit);
   padding-right: var(--dl-space-space-unitandahalfunit);
   justify-content: center;
+  background-color: hsl(218, 44%, 29%) !important;
 }
 .header-full-nav {
   flex: 0 0 auto;
@@ -57,6 +58,8 @@
   font-weight: 600;
   margin-right: var(--dl-space-space-unit);
   text-decoration: none;
+  color: var(--dl-color-secondary-700);
+  font-weight: 600;
 }
 .header-full-menu {
   flex: 0 0 auto;
@@ -71,6 +74,8 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
+  color: var(--dl-color-secondary-700);
+  font-weight: 600;
 }
 .header-full-navlink1:hover {
   color: var(--dl-color-gray-500);
