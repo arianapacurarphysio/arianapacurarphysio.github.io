@@ -21,6 +21,7 @@
 }
 
 .header-full-header {
+    position: fixed;
     width: 100%;
     height: 60px;
     display: flex;
@@ -56,6 +57,7 @@
 }
 .header-full-navlink {
     font-weight: 600;
+    font-family: Georgia;
     margin-right: var(--dl-space-space-unit);
     text-decoration: none;
     color: var(--dl-color-secondary-700);
@@ -706,7 +708,8 @@
 }
 .profile-info {
     flex: 4;
-    color: var(--dl-color-gray-white);
+    /*color: var(--dl-color-gray-white);*/
+    color: #111154;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -716,7 +719,8 @@
     flex-direction: column;
     background-size: cover;
     justify-content: center;
-    background-image: url("public/curved5-1400w.jpg");
+    background-color: #A8D1E7;
+    /*background-image: url("public/curved5-1400w.jpg");*/
     border-top-right-radius: var(--dl-radius-radius-radius1);
     border-bottom-right-radius: var(--dl-radius-radius-radius1);
 }
@@ -747,7 +751,7 @@
     flex-direction: row;
 }
 .profile-icon02 {
-    fill: var(--dl-color-gray-white);
+    fill: #C06DBA;
     width: 24px;
     height: 24px;
     margin-right: var(--dl-space-space-unit);
@@ -764,7 +768,7 @@
     flex-direction: row;
 }
 .profile-icon04 {
-    fill: var(--dl-color-gray-white);
+    fill: #45A8AD;
     width: 24px;
     height: 24px;
     margin-right: var(--dl-space-space-unit);
@@ -781,7 +785,7 @@
     flex-direction: row;
 }
 .profile-icon06 {
-    fill: var(--dl-color-gray-white);
+    fill: #776492;
     width: 24px;
     height: 24px;
     margin-right: var(--dl-space-space-unit);
@@ -797,15 +801,15 @@
     flex-direction: row;
 }
 .profile-icon08 {
-    fill: var(--dl-color-gray-white);
-    width: 24px;
-    height: 24px;
+    fill: #C06DBA;
+    width: 50px;
+    height: 50px;
     margin-right: var(--dl-space-space-doubleunit);
 }
 .profile-icon10 {
-    fill: var(--dl-color-gray-white);
-    width: 24px;
-    height: 24px;
+    fill: #776492;
+    width: 50px;
+    height: 50px;
     margin-right: var(--dl-space-space-doubleunit);
 }
 .profile-icon12 {
@@ -815,9 +819,9 @@
     margin-right: var(--dl-space-space-doubleunit);
 }
 .profile-icon14 {
-    fill: var(--dl-color-gray-white);
-    width: 24px;
-    height: 24px;
+    fill: #45A8AD;
+    width: 50px;
+    height: 50px;
     margin-right: var(--dl-space-space-doubleunit);
 }
 .profile-image1 {
@@ -838,7 +842,7 @@
     height: 100%;
     opacity: 0.9;
     position: absolute;
-    background-image: linear-gradient(310deg,#2152ff,#21d4fd);
+    /*background-image: linear-gradient(310deg,#2152ff,#21d4fd);*/
 }
 @media(max-width: 991px) {
     .profile-container01 {

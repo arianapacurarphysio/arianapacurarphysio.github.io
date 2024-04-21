@@ -63,6 +63,7 @@
   justify-content: space-between;
 }
 .header-navlink {
+  font-family: Georgia;
   color: var(--dl-color-secondary-700);
   font-weight: 600;
   margin-left: var(--dl-space-space-unit);
